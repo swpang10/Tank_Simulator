@@ -5,8 +5,7 @@ using UnityEngine;
 
 public class TankMove : MonoBehaviour
 {
-
-    float moveSpeed = -0.25f;
+    public float moveSpeed = -0.25f;
     float rotateSpeed = 1f;
     // Start is called before the first frame update
     void Start()

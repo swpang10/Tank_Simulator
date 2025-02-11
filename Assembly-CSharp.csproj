@@ -55,6 +55,9 @@
     <UnityVersion>2022.3.45f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Tank\Bullet.cs" />
+    <Compile Include="Assets\Scripts\Tank\Fire.cs" />
+    <Compile Include="Assets\Scripts\Tank\Aim.cs" />
     <Compile Include="Assets\Scripts\Tank\TankMove.cs" />
     <Compile Include="Assets\Scripts\Tank\TankHaedRotation.cs" />
     <Compile Include="Assets\Scripts\Tank\TankBarrelRotation.cs" />

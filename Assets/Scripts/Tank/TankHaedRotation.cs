@@ -18,7 +18,7 @@ public class TankHaedRotation : MonoBehaviour
     void Update()
     {
         MouseX += Input.GetAxisRaw("Mouse X") * mouseSensitivity * Time.deltaTime;
-        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0, MouseX, 0), 0.1f);
+        transform.localRotation = Quaternion.Slerp(transform.localRotation, Quaternion.Euler(0, MouseX, 0), 0.1f);
     
     }
 }
