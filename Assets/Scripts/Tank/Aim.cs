@@ -1,37 +1,26 @@
+using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Aim : MonoBehaviour
 {
-    public Camera cm1;
-    public Camera cm2;
+    public CinemachineVirtualCamera cam1;
+    public CinemachineVirtualCamera cam2;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Update()
     {
-        cm1.enabled = true;
-        cm2.enabled = false;
-        Debug.Log(cm1.enabled);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetMouseButtonDown(1))
+        if(Input.GetMouseButtonDown(1))
+        if (cam1.isActiveAndEnabled == true)
         {
-            if (cm1.enabled)
-            {
-                Debug.Log(cm1.enabled);
-                cm1.enabled = false;
-                cm2.enabled = true;
-            }
-            else if (cm2.enabled)
-            {
-                Debug.Log(cm1.enabled);
-                cm1.enabled = true;
-                cm2.enabled = false;
-            }
+            cam1.gameObject.SetActive(false);
+            cam2.gameObject.SetActive(true);
+        }
+        else if (cam2.isActiveAndEnabled == true)
+        {
+            cam1.gameObject.SetActive(true);
+            cam2.gameObject.SetActive(false);
         }
     }
+
 }

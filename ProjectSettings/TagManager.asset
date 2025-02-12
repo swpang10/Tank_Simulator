@@ -13,6 +13,9 @@ TagManager:
   - UI
   - Player
   - PlayerBullet
+  - Head
+  - Body
+  - Rail
   - 
   - 
   - 
@@ -22,10 +25,7 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - CrossHair
   - 
   - 
   - 
