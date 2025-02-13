@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "E:\\Tank_Simulator\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9297054A-4400-906E-A86E-124267320735}|Assembly-CSharp.csproj|e:\\tank_simulator\\assets\\scripts\\tank\\aim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9297054A-4400-906E-A86E-124267320735}|Assembly-CSharp.csproj|e:\\tank_simulator\\assets\\scripts\\tank\\crosshair.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9297054A-4400-906E-A86E-124267320735}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tank\\crosshair.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9297054A-4400-906E-A86E-124267320735}|Assembly-CSharp.csproj|E:\\Tank_Simulator\\assets\\scripts\\tank\\aim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9297054A-4400-906E-A86E-124267320735}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tank\\aim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9297054A-4400-906E-A86E-124267320735}|Assembly-CSharp.csproj|e:\\tank_simulator\\assets\\scripts\\tank\\tankmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9297054A-4400-906E-A86E-124267320735}|Assembly-CSharp.csproj|E:\\Tank_Simulator\\assets\\scripts\\tank\\tankmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9297054A-4400-906E-A86E-124267320735}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tank\\tankmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -35,19 +39,31 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "CrossHair.cs",
+              "DocumentMoniker": "E:\\Tank_Simulator\\Assets\\Scripts\\Tank\\CrossHair.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Tank\\CrossHair.cs",
+              "ToolTip": "E:\\Tank_Simulator\\Assets\\Scripts\\Tank\\CrossHair.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Tank\\CrossHair.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T07:11:14.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Aim.cs",
               "DocumentMoniker": "E:\\Tank_Simulator\\Assets\\Scripts\\Tank\\Aim.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Tank\\Aim.cs",
               "ToolTip": "E:\\Tank_Simulator\\Assets\\Scripts\\Tank\\Aim.cs",
               "RelativeToolTip": "Assets\\Scripts\\Tank\\Aim.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T06:38:16.521Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-12T06:38:16.521Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Tank.cs",
               "DocumentMoniker": "E:\\Tank_Simulator\\Assets\\Scripts\\Tank\\Tank.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Tank\\Tank.cs",
@@ -59,7 +75,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "TankMove.cs",
               "DocumentMoniker": "E:\\Tank_Simulator\\Assets\\Scripts\\Tank\\TankMove.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Tank\\TankMove.cs",
@@ -67,12 +83,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Tank\\TankMove.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvxcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T05:22:44.676Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-12T05:22:44.676Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "EnemyBullet.cs",
               "DocumentMoniker": "E:\\Tank_Simulator\\Assets\\Scripts\\Tank\\EnemyBullet.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Tank\\EnemyBullet.cs",
@@ -84,7 +99,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Bullet.cs",
               "DocumentMoniker": "E:\\Tank_Simulator\\Assets\\Scripts\\Tank\\Bullet.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Tank\\Bullet.cs",
