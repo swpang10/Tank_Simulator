@@ -4,21 +4,43 @@ using UnityEngine;
 
 public class EnemyBullet : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    private int headLayer;
+    private int bodyLayer;
+    private int railLayer;
+
+    private void Start()
     {
-        
+        headLayer = LayerMask.NameToLayer("Head");
+        bodyLayer = LayerMask.NameToLayer("Body");
+        railLayer = LayerMask.NameToLayer("Rail");
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("Hit!!");
+        GameObject hitObject = collision.gameObject;
+        int hitLayer = hitObject.layer;
+
+        // 레이어별 동작
+        if (hitLayer == headLayer)
+        {
+            Debug.Log("Headshot!");
+            
+        }
+        else if (hitLayer == bodyLayer)
+        {
+            Debug.Log("Body hit.");
+
+        }
+        else if (hitLayer == railLayer)
+        {
+            Debug.Log("Rail hit.");
+
+        }
+        else
+        {
+            Debug.Log("Hit nothing.");
+        }
         Destroy(gameObject);
     }
 }
