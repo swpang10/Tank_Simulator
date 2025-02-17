@@ -18,6 +18,7 @@ public class TankMove : Tank
     {
         if (Input.GetKey(KeyCode.W)){
             this.transform.Translate(new Vector3(moveSpeed, 0, 0));
+            Debug.Log("W");
         }
 
         if (Input.GetKey(KeyCode.S))
@@ -27,6 +28,7 @@ public class TankMove : Tank
         if (Input.GetKey(KeyCode.D))
         {
             this.transform.Rotate(new Vector3(0, rotateSpeed, 0));
+            Debug.Log("D");
         }
         if (Input.GetKey(KeyCode.A))
         {

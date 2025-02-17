@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Aim : MonoBehaviour
 {
+
     public CinemachineVirtualCamera cam1;
     public CinemachineVirtualCamera cam2;
 
@@ -15,12 +16,14 @@ public class Aim : MonoBehaviour
         {
             cam1.gameObject.SetActive(false);
             cam2.gameObject.SetActive(true);
+            
         }
         else if (cam2.isActiveAndEnabled == true)
         {
             cam1.gameObject.SetActive(true);
             cam2.gameObject.SetActive(false);
-        }
+  
+            }
     }
 
 }

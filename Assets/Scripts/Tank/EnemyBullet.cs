@@ -8,24 +8,26 @@ public class EnemyBullet : MonoBehaviour
     private int headLayer;
     private int bodyLayer;
     private int railLayer;
+    private int playerLayer;
 
     private void Start()
     {
         headLayer = LayerMask.NameToLayer("Head");
         bodyLayer = LayerMask.NameToLayer("Body");
         railLayer = LayerMask.NameToLayer("Rail");
+        playerLayer = LayerMask.NameToLayer("Player");
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        GameObject hitObject = collision.gameObject;
+        GameObject hitObject = other.gameObject;
         int hitLayer = hitObject.layer;
 
-        // 레이어별 동작
+
         if (hitLayer == headLayer)
         {
             Debug.Log("Headshot!");
-            
+
         }
         else if (hitLayer == bodyLayer)
         {
@@ -37,10 +39,15 @@ public class EnemyBullet : MonoBehaviour
             Debug.Log("Rail hit.");
 
         }
+        else if (hitLayer == playerLayer)
+        {
+            Debug.Log("collider hit");
+        }
         else
         {
             Debug.Log("Hit nothing.");
         }
+
         Destroy(gameObject);
     }
 }
