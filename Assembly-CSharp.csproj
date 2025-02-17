@@ -55,15 +55,19 @@
     <UnityVersion>2022.3.45f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Tank\Bullet.cs" />
-    <Compile Include="Assets\Scripts\Tank\CrossHair.cs" />
+    <Compile Include="Assets\Scripts\Tank\TankStatus.cs" />
+    <Compile Include="Assets\Scripts\Bullet\PlayerBullet.cs" />
+    <Compile Include="Assets\Scripts\Bullet\Bullet.cs" />
     <Compile Include="Assets\Scripts\Tank\Fire.cs" />
-    <Compile Include="Assets\Scripts\Tank\Aim.cs" />
+    <Compile Include="Assets\Scripts\Aim\Aim.cs" />
+    <Compile Include="Assets\Scripts\Tank\EnemyTank.cs" />
     <Compile Include="Assets\Scripts\Tank\TankMove.cs" />
     <Compile Include="Assets\Scripts\Tank\TankHaedRotation.cs" />
+    <Compile Include="Assets\Scripts\Bullet\EnemyBullet.cs" />
     <Compile Include="Assets\Scripts\Tank\Tank.cs" />
-    <Compile Include="Assets\Scripts\Tank\EnemyBullet.cs" />
+    <Compile Include="Assets\Scripts\Aim\CrossHair.cs" />
     <Compile Include="Assets\Scripts\Tank\TankBarrelRotation.cs" />
+    <Compile Include="Assets\Scripts\Tank\PlayerTank.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

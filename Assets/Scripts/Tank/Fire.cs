@@ -6,11 +6,9 @@ public class Fire : MonoBehaviour
 {
     public GameObject bullet;
     public GameObject barrelEnd;
-
-     private Rigidbody b;
     private Rigidbody backForce;
     private Vector3 FireForce;
-
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +27,7 @@ public class Fire : MonoBehaviour
             Rigidbody b = bulletInstance.GetComponent<Rigidbody>(); 
            
             b.AddForce(FireForce * 200, ForceMode.Impulse); 
-            backForce.AddForce(-FireForce * 200);        
+            backForce.AddForce(-FireForce * 10000);        
         }
     }
 }

@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 2544426091209502664}
   - component: {fileID: 5455176658573686425}
   - component: {fileID: 8550403035554310704}
-  - component: {fileID: -8440591994984703158}
+  - component: {fileID: 5168029453436500643}
   - component: {fileID: 3029421092140084232}
   - component: {fileID: 5330118479989599310}
   m_Layer: 7
-  m_Name: Bullet
+  m_Name: PlayerBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -86,7 +86,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &-8440591994984703158
+--- !u!114 &5168029453436500643
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -95,9 +95,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 642074482976552693}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 637b678d163cac940af3890fc77cb7a2, type: 3}
+  m_Script: {fileID: 11500000, guid: 9a4ea2c5d1e318f4d839194b5b9bb247, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  round: 0
+  armorPlate: 0
+  headArmor: 0
+  bodyArmor: 0
+  railArmor: 0
+  totalHealth: 0
+  enemy: {fileID: 1841226891290504848, guid: c062fe715428f8f43bd857295343b534, type: 3}
 --- !u!135 &3029421092140084232
 SphereCollider:
   m_ObjectHideFlags: 0

@@ -1,0 +1,6 @@
+C:\Users\Atents\Desktop\방선웅_포트폴리오\Tank_Simulator\Temp\bin\Debug\Assembly-CSharp.dll
+C:\Users\Atents\Desktop\방선웅_포트폴리오\Tank_Simulator\Temp\bin\Debug\Assembly-CSharp.pdb
+C:\Users\Atents\Desktop\방선웅_포트폴리오\Tank_Simulator\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+C:\Users\Atents\Desktop\방선웅_포트폴리오\Tank_Simulator\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+C:\Users\Atents\Desktop\방선웅_포트폴리오\Tank_Simulator\obj\Debug\Assembly-CSharp.dll
+C:\Users\Atents\Desktop\방선웅_포트폴리오\Tank_Simulator\obj\Debug\Assembly-CSharp.pdb

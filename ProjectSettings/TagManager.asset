@@ -16,11 +16,11 @@ TagManager:
   - Head
   - Body
   - Rail
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Enemy
+  - EnemyBullet
+  - EnemyHead
+  - EnemyBody
+  - EnemyRail
   - 
   - 
   - 

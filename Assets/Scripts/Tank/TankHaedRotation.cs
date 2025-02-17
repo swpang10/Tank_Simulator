@@ -6,7 +6,7 @@ public class TankHaedRotation : MonoBehaviour
 { 
     public float mouseSensitivity = 200f; 
     private float MouseX;
-    private bool isAim  = false;
+    protected bool isAim  = false;
 
 
     // Start is called before the first frame update

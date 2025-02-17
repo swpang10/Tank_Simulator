@@ -2,13 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyBullet : MonoBehaviour
+public class EnemyBullet : Bullet
 {
-
-    private int headLayer;
-    private int bodyLayer;
-    private int railLayer;
-    private int playerLayer;
 
     private void Start()
     {
@@ -16,6 +11,7 @@ public class EnemyBullet : MonoBehaviour
         bodyLayer = LayerMask.NameToLayer("Body");
         railLayer = LayerMask.NameToLayer("Rail");
         playerLayer = LayerMask.NameToLayer("Player");
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -27,7 +23,8 @@ public class EnemyBullet : MonoBehaviour
         if (hitLayer == headLayer)
         {
             Debug.Log("Headshot!");
-
+            hitTank.Damage(shootTank.round, hitTank.armorPlate, hitTank.headArmor, hitTank.totalHealth);
+            Debug.Log("10");
         }
         else if (hitLayer == bodyLayer)
         {
@@ -50,4 +47,6 @@ public class EnemyBullet : MonoBehaviour
 
         Destroy(gameObject);
     }
+
+
 }

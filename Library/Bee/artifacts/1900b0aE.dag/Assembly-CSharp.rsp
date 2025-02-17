@@ -354,15 +354,19 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.45f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.45f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
-"Assets/Scripts/Tank/Aim.cs"
-"Assets/Scripts/Tank/Bullet.cs"
-"Assets/Scripts/Tank/CrossHair.cs"
-"Assets/Scripts/Tank/EnemyBullet.cs"
+"Assets/Scripts/Aim/Aim.cs"
+"Assets/Scripts/Aim/CrossHair.cs"
+"Assets/Scripts/Bullet/Bullet.cs"
+"Assets/Scripts/Bullet/EnemyBullet.cs"
+"Assets/Scripts/Bullet/PlayerBullet.cs"
+"Assets/Scripts/Tank/EnemyTank.cs"
 "Assets/Scripts/Tank/Fire.cs"
+"Assets/Scripts/Tank/PlayerTank.cs"
 "Assets/Scripts/Tank/Tank.cs"
 "Assets/Scripts/Tank/TankBarrelRotation.cs"
 "Assets/Scripts/Tank/TankHaedRotation.cs"
 "Assets/Scripts/Tank/TankMove.cs"
+"Assets/Scripts/Tank/TankStatus.cs"
 -langversion:9.0
 /deterministic
 /optimize+

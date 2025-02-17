@@ -5,7 +5,7 @@ using UnityEngine;
 public class TankBarrelRotation : TankHaedRotation
 {
     private float MouseY;
-    private bool isAim = false;
+   
 
     // Start is called before the first frame update
     void Start()
@@ -20,12 +20,12 @@ public class TankBarrelRotation : TankHaedRotation
         {
             if (isAim == false)
             {
-                isAim = true;
+               
                 mouseSensitivity = 50f;
             }
             else if (isAim == true)
             {
-                isAim = false;
+
                 mouseSensitivity = 400f;
             }
         }

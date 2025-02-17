@@ -1,14 +1,17 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class PlayerTank : Tank
 {
-    public Tank enemy;
+
+    public Tank player;
+
     // Start is called before the first frame update
     void Start()
     {
-       
+        player = this;       
     }
 
     // Update is called once per frame
@@ -16,9 +19,6 @@ public class Bullet : MonoBehaviour
     {
         
     }
-    private void OnCollisionEnter(Collision collision)
-    {
-        Debug.Log("Hit!!");
-        Destroy(gameObject);
-    }
+
+
 }
