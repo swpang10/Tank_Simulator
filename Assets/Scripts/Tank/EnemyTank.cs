@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class EnemyTank : Tank
 {
+    public Tank ememy;
+
     // Start is called before the first frame update
     void Start()
     {

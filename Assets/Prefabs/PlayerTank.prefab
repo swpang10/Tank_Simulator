@@ -1087,7 +1087,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6428188516181837160}
   - component: {fileID: 3109148883213303260}
-  - component: {fileID: 4963158263707474708}
   - component: {fileID: 2028586736012719974}
   - component: {fileID: 3840284354416693056}
   m_Layer: 6
@@ -1125,26 +1124,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4ce532017e84d9a47b603a6b8ce26d7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  round: 0
-  armorPlate: 0
-  headArmor: 0
-  bodyArmor: 0
-  railArmor: 0
-  totalHealth: 0
-  moveSpeed: 0
-  rotateSpeed: 0
---- !u!114 &4963158263707474708
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4114692422799515137}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffc796f3b9becd74da40a1c15e0b43e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   round: 0

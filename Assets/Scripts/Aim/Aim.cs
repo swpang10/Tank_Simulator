@@ -9,6 +9,11 @@ public class Aim : MonoBehaviour
     public CinemachineVirtualCamera cam1;
     public CinemachineVirtualCamera cam2;
 
+    private void Start()
+    {
+        cam2.gameObject.SetActive(false);
+    }
+
     private void Update()
     {
         if(Input.GetMouseButtonDown(1))

@@ -11,9 +11,11 @@ public class EnemyBullet : Bullet
         bodyLayer = LayerMask.NameToLayer("Body");
         railLayer = LayerMask.NameToLayer("Rail");
         playerLayer = LayerMask.NameToLayer("Player");
+        round = GetComponentInParent<EnemyTank>().round;
 
     }
 
+    
     private void OnTriggerEnter(Collider other)
     {
         GameObject hitObject = other.gameObject;
@@ -23,28 +25,23 @@ public class EnemyBullet : Bullet
         if (hitLayer == headLayer)
         {
             Debug.Log("Headshot!");
-            hitTank.Damage(shootTank.round, hitTank.armorPlate, hitTank.headArmor, hitTank.totalHealth);
-            Debug.Log("10");
+            hitTank.hitPos = 1;
+            
         }
         else if (hitLayer == bodyLayer)
         {
             Debug.Log("Body hit.");
-
+            hitTank.hitPos = 2;
         }
         else if (hitLayer == railLayer)
         {
             Debug.Log("Rail hit.");
-
-        }
-        else if (hitLayer == playerLayer)
-        {
-            Debug.Log("collider hit");
-        }
-        else
-        {
-            Debug.Log("Hit nothing.");
+            hitTank.hitPos = 3;
         }
 
+        
+        Debug.Log(hitPos);
+        hitTank.damage = round;
         Destroy(gameObject);
     }
 

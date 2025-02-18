@@ -55,7 +55,6 @@
     <UnityVersion>2022.3.45f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Tank\TankStatus.cs" />
     <Compile Include="Assets\Scripts\Bullet\PlayerBullet.cs" />
     <Compile Include="Assets\Scripts\Bullet\Bullet.cs" />
     <Compile Include="Assets\Scripts\Tank\Fire.cs" />

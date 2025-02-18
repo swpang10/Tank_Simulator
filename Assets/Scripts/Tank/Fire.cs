@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Fire : MonoBehaviour
 {
+    public GameObject parent;
     public GameObject bullet;
     public GameObject barrelEnd;
     private Rigidbody backForce;
@@ -23,9 +24,10 @@ public class Fire : MonoBehaviour
         FireForce = barrelEnd.transform.up;
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            GameObject bulletInstance = Instantiate(bullet, barrelEnd.transform.position, barrelEnd.transform.rotation);
-            Rigidbody b = bulletInstance.GetComponent<Rigidbody>(); 
-           
+            GameObject bulletInstance = Instantiate(bullet, barrelEnd.transform.position, barrelEnd.transform.rotation);       
+            Rigidbody b = bulletInstance.GetComponent<Rigidbody>();
+            bulletInstance.transform.parent = parent.transform;
+
             b.AddForce(FireForce * 200, ForceMode.Impulse); 
             backForce.AddForce(-FireForce * 10000);        
         }

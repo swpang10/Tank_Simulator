@@ -19,7 +19,7 @@ public class CrossHair : MonoBehaviour
         RaycastHit hit;
         Debug.DrawRay(start.transform.position, start.transform.forward * 1000, Color.blue, 0.3f);
         if (Input.GetMouseButtonDown(1))
-            if (cam2.isActiveAndEnabled == true)
+            if (cam2.isActiveAndEnabled == false)
             {
                 crosshairUI.gameObject.SetActive(true);
                 if (Physics.Raycast(start.transform.position, start.transform.forward, out hit, 1000))

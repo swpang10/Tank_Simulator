@@ -366,7 +366,6 @@
 "Assets/Scripts/Tank/TankBarrelRotation.cs"
 "Assets/Scripts/Tank/TankHaedRotation.cs"
 "Assets/Scripts/Tank/TankMove.cs"
-"Assets/Scripts/Tank/TankStatus.cs"
 -langversion:9.0
 /deterministic
 /optimize+
