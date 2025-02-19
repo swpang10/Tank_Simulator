@@ -21,15 +21,21 @@ public class Fire : MonoBehaviour
     void Update()
     {
 
+                
         FireForce = barrelEnd.transform.up;
-        if (Input.GetKeyDown(KeyCode.Mouse0))
-        {
-            GameObject bulletInstance = Instantiate(bullet, barrelEnd.transform.position, barrelEnd.transform.rotation);       
-            Rigidbody b = bulletInstance.GetComponent<Rigidbody>();
-            bulletInstance.transform.parent = parent.transform;
+            if (Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                if (parent.GetComponent<PlayerTank>().reloadSpeed <= parent.GetComponent<PlayerTank>().reloading)
+                {
+                    parent.GetComponent<PlayerTank>().reloading = 0;
+                    GameObject bulletInstance = Instantiate(bullet, barrelEnd.transform.position, barrelEnd.transform.rotation);
+                    Rigidbody b = bulletInstance.GetComponent<Rigidbody>();
+                    bulletInstance.transform.parent = parent.transform;
 
-            b.AddForce(FireForce * 200, ForceMode.Impulse); 
-            backForce.AddForce(-FireForce * 10000);        
-        }
+                    b.AddForce(FireForce * 200, ForceMode.Impulse);
+                    backForce.AddForce(-FireForce * 10000);
+                }
+            }   
+       
     }
 }

@@ -516,6 +516,10 @@ PrefabInstance:
       propertyPath: hitTank
       value: 
       objectReference: {fileID: 688182685}
+    - target: {fileID: 6023786449831596601, guid: 44dc602689f9cce41821d1dacd69b48e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.23
+      objectReference: {fileID: 0}
     - target: {fileID: 6428188516181837160, guid: 44dc602689f9cce41821d1dacd69b48e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.0880547
@@ -778,6 +782,14 @@ PrefabInstance:
       propertyPath: parent
       value: 
       objectReference: {fileID: 23516405}
+    - target: {fileID: 3109148883213303260, guid: c062fe715428f8f43bd857295343b534, type: 3}
+      propertyPath: damage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3109148883213303260, guid: c062fe715428f8f43bd857295343b534, type: 3}
+      propertyPath: hitPos
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3109148883213303260, guid: c062fe715428f8f43bd857295343b534, type: 3}
       propertyPath: player
       value: 

@@ -104,7 +104,15 @@ MonoBehaviour:
   bodyArmor: 0
   railArmor: 0
   totalHealth: 0
-  enemy: {fileID: 1841226891290504848, guid: c062fe715428f8f43bd857295343b534, type: 3}
+  curHealth: 0
+  moveSpeed: 0
+  rotateSpeed: 0
+  reloadSpeed: 0
+  reloading: 0
+  damage: 0
+  hitPos: 0
+  enemyTank: {fileID: -1980721985937509048, guid: 44dc602689f9cce41821d1dacd69b48e, type: 3}
+  playerTank: {fileID: 3109148883213303260, guid: c062fe715428f8f43bd857295343b534, type: 3}
 --- !u!135 &3029421092140084232
 SphereCollider:
   m_ObjectHideFlags: 0

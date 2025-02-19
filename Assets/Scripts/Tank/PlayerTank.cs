@@ -19,6 +19,11 @@ public class PlayerTank : Tank
     void Update()
     {
         
+        if (reloading < reloadSpeed)
+        {
+            reloading += Time.deltaTime;
+        }
+        
         if (Input.GetKey(KeyCode.W))
         {
             this.transform.Translate(new Vector3(player.moveSpeed, 0, 0));
@@ -37,14 +42,10 @@ public class PlayerTank : Tank
             this.transform.Rotate(new Vector3(0, -player.rotateSpeed, 0));
         }
 
-
-
-
-
-        Debug.Log(player.hitPos);
+      
         if (player.hitPos == 1)
         {
-            Debug.Log("머리맞음");
+
             Damage(player, this.damage, hitPos);
             this.damage = 0;
             this.hitPos = 0;
@@ -61,15 +62,14 @@ public class PlayerTank : Tank
             this.damage = 0;
             this.hitPos = 0;
         }
+        if (this.curHealth <= 0)
+        {
+            IsAlive(this);
+        }
     }
 
 
-    public void updateStatus()
-    {
-        totalHealth = player.totalHealth;
-    }
-
-
+    
 
 
 }

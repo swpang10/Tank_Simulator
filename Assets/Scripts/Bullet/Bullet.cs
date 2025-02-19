@@ -10,8 +10,8 @@ public class Bullet : Tank
     protected int railLayer;
     protected int playerLayer;
     protected int enemyLayer;
-    public EnemyTank shootTank;
-    public PlayerTank hitTank;
+    public EnemyTank enemyTank;
+    public PlayerTank playerTank;
 
     private void Start()
     {

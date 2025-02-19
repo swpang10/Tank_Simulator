@@ -12,10 +12,8 @@ public class EnemyBullet : Bullet
         railLayer = LayerMask.NameToLayer("Rail");
         playerLayer = LayerMask.NameToLayer("Player");
         round = GetComponentInParent<EnemyTank>().round;
-
     }
 
-    
     private void OnTriggerEnter(Collider other)
     {
         GameObject hitObject = other.gameObject;
@@ -25,23 +23,26 @@ public class EnemyBullet : Bullet
         if (hitLayer == headLayer)
         {
             Debug.Log("Headshot!");
-            hitTank.hitPos = 1;
-            
+            other.GetComponentInParent<Transform>().GetComponentInParent<Transform>().GetComponentInParent<PlayerTank>().hitPos = 1;
+            other.GetComponentInParent<Transform>().GetComponentInParent<Transform>().GetComponentInParent<PlayerTank>().damage = round;
+
+
         }
         else if (hitLayer == bodyLayer)
         {
             Debug.Log("Body hit.");
-            hitTank.hitPos = 2;
+            other.GetComponentInParent<Transform>().GetComponentInParent<PlayerTank>().hitPos = 2;
+            other.GetComponentInParent<Transform>().GetComponentInParent<PlayerTank>().damage = round;
         }
         else if (hitLayer == railLayer)
         {
             Debug.Log("Rail hit.");
-            hitTank.hitPos = 3;
+            other.GetComponentInParent<Transform>().GetComponentInParent<Transform>().GetComponentInParent<PlayerTank>().hitPos = 3;
+            other.GetComponentInParent<Transform>().GetComponentInParent<Transform>().GetComponentInParent<PlayerTank>().damage = round;
         }
 
+
         
-        Debug.Log(hitPos);
-        hitTank.damage = round;
         Destroy(gameObject);
     }
 
